@@ -1,0 +1,79 @@
+a. T(n)=2T(n/2)+n
+
+public class Main {
+
+    static long T(int n) {
+        if (n <= 1)
+            return 1;
+
+        return 2 * T(n / 2) + (long) Math.pow(n, 4);
+    }
+
+    public static void main(String[] args) {
+        int n = 16;
+        System.out.println(T(n));
+    }
+}
+b. T(n)=T(7n/10)+n
+public class Main {
+
+    static long T(int n) {
+        if (n <= 1)
+            return 1;
+
+        return T((7 * n) / 10) + n;
+    }
+
+    public static void main(String[] args) {
+        int n = 100;
+        System.out.println(T(n));
+    }
+}
+c. T(n)=16T(n/4)+n
+
+public class Main {
+
+    static long T(int n) {
+        if (n <= 1)
+            return 1;
+
+        return 16 * T(n / 4) + (long) n * n;
+    }
+
+    public static void main(String[] args) {
+        int n = 64;
+        System.out.println(T(n));
+    }
+}
+d. T(n)=77T(n/3)+n
+
+public class Main {
+
+    static long T(int n) {
+        if (n <= 1)
+            return 1;
+
+        return 77 * T(n / 3) + (long) n * n;
+    }
+
+    public static void main(String[] args) {
+        int n = 27;
+        System.out.println(T(n));
+    }
+}
+e. T(n)=77T(n/2)+n
+
+public class Main {
+
+    static long T(int n) {
+        if (n <= 1)
+            return 1;
+
+        return 77 * T(n / 2) + (long) n * n;
+    }
+
+    public static void main(String[] args) {
+        int n = 32;
+        System.out.println(T(n));
+    }
+}
